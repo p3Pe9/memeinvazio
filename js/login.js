@@ -23,7 +23,7 @@ async function login(params) {
         const data = await res.json()
         console.log(data)
 
-        if (response.ok) {
+        if (res.ok) {
             alert(data.message)
             window.location.href = '../html/home.html'
         } else if (data.errors) {
